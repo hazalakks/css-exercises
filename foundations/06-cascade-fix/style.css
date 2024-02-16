@@ -1,3 +1,5 @@
+/*my solution
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -5,19 +7,17 @@ body {
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
-  font-weight: 800;
+  font-weight: bold;
+  font-size: 22px;
+
 }
 
 .small-para {
   font-size: 14px;
-  font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
 
-.confirm {
+.button.confirm {
   background: green;
   color: white;
   font-weight: bold;
@@ -40,3 +40,36 @@ div.text {
   font-size: 22px;
   font-weight: 100;
 }
+
+.text.child {
+  font-size: 16px;
+  font-weight: bold;
+} */
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+.para {
+  font-size: 22px;
+}
+.small-para {
+  font-size: 14px;
+}
+
+#confirm-button {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+div .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
