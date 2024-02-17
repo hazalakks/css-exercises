@@ -1,3 +1,4 @@
+/* I could not do the top and the bottom spaces (just add .card to padding8px)
 body {
   background: #eee;
   font-family: sans-serif;
@@ -10,18 +11,75 @@ body {
 }
 
 .title {
+  font-size: 16px;
   background: #e3f4ff;
+  padding: 8px;    
+  margin: 8px;  -- instead  margin-top: 0;
+                            margin-bottom: 8px;
 }
 
 .content {
   background: #e3f4ff;
+  padding: 16px;    -- instead padding: 16px 8px; (top&bottom 16px, right&left is 8px)
+  margin: 8px;    -- instead margin-bottom: 8px;
 }
 
 .button-container {
+  text-align: center;
   background: #e3f4ff;
+  padding: 8px;    
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  margin: auto;   --- margin: 0 auto; This is for centering
+    margin: 0 auto; Sets the element's left and right margins to auto ,
+    and the top and bottom margins to 0(you can write other values.) 
+    margin: auto; Sets all the margins to auto
+
+  padding-left: 24px; --- for these line just write padding: 8px 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+} */
+body {
+  background: #eee;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 400px;
+  background: #fff;
+  margin: 16px auto;
+  padding: 8px;
+}
+
+.title {
+  background: #e3f4ff;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.content {
+  background: #e3f4ff;
+  margin-bottom: 8px;
+  padding: 16px 8px;
+}
+
+.button-container {
+  background: #e3f4ff;
+  text-align: center;
+  padding: 8px;
+}
+
+button {
+  background: white;
+  border: 1px solid #eee;
+  display: block;
+  margin: 0 auto;
+  padding: 8px 24px;
 }
